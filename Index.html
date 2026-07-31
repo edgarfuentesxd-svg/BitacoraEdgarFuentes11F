@@ -1,82 +1,224 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <link rel="icon" href="C:\Users\Alumno Capouilliez\Downloads\Fuentes11F\Recursos\IMG\LOGO CAPU.png">
-    </head>
 <head>
+    <link rel="icon" href="C:\Users\Alumno Capouilliez\Downloads\Fuentes11F\Recursos\IMG\LOGO CAPU.png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitácora Edgar Fuentes</title>
+
     <style>
         html, body{
-            height: 100%;
-            margin: 0%;
-            font-family: Arial, sans-serif;
+            height:100%;
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:#f5f5f5;
         }
+
         body{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
+            display:flex;
+            flex-direction:column;
+            text-align:center;
         }
+
         header{
-            padding: 20px;
-            background-color: rgb(82, 108, 108);
-        }
-        
-        h1 {
-            text-shadow: 0 0 10px #b026ff, 0 0 20px #b026ff, 0 0 30px #b026ff;
-            color: white;
+            padding:20px;
+            background-color:rgb(82,108,108);
         }
 
-        .semana {
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px auto;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            border-left: 5px solid #b026ff;
-            max-width: 800px;
-            text-align: left;
-        }
-
-        .logo-zoom {
-            transition: transform 0.3s ease;
-        }
-        .logo-zoom:hover {
-            transform: scale(1.1);
+        h1{
+            color:white;
+            text-shadow:0 0 10px #b026ff,
+                        0 0 20px #b026ff,
+                        0 0 30px #b026ff;
         }
 
         main{
-            flex: 1;
-            padding: 20px;
-            max-width: 1200ps;
-            margin: 0 auto;
+            flex:1;
+            padding:20px;
+            max-width:1200px;
+            margin:auto;
         }
+
+        .semana{
+            background:white;
+            border-radius:10px;
+            padding:20px;
+            margin:20px auto;
+            box-shadow:0 4px 8px rgba(0,0,0,.2);
+            border-left:5px solid #b026ff;
+            max-width:800px;
+            text-align:left;
+        }
+
+        .semana h3{
+            color:#b026ff;
+            margin-top:0;
+        }
+
+        .pdf-container,
+        .video-container{
+            width:100%;
+            margin-top:15px;
+            overflow:hidden;
+            border-radius:10px;
+            background:black;
+        }
+
+        iframe{
+            width:100%;
+            height:500px;
+            border:none;
+        }
+
+        video{
+            width:100%;
+            display:block;
+        }
+
+        .imagen-container{
+            text-align:center;
+            margin-top:15px;
+        }
+
+        .imagen-container img{
+            max-width:100%;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,.2);
+        }
+
+        .logo-zoom{
+            transition:transform .3s ease;
+        }
+
+        .logo-zoom:hover{
+            transform:scale(1.1);
+        }
+
         footer{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 50px;
-            border-top: 1px solid rgb(251, 3, 3);
-            background-color: rgb(100, 118, 237);
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 50px;
+            border-top:1px solid rgb(251,3,3);
+            background-color:rgb(100,118,237);
+            color:white;
+            font-weight:bold;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Bitácora segunda y tercera unidad</h1>
-    </header>
-    <main>
-        <h1>contenido de la pagina web</h1>
 
-        <div class="semana">
-            <p>Contenido de mi bitácora aquí...</p>
+<header>
+    <h1>Bitácora segunda y tercera unidad</h1>
+</header>
+
+<main>
+
+    <h1>Contenido de la página web</h1>
+
+    <!-- SEMANA 1 -->
+    <div class="semana">
+        <h3>Semana 1: Documentación de Proyecto</h3>
+        <p>Vista previa del documento PDF.</p>
+
+        <div class="pdf-container">
+            <iframe src="recursos/IntroducciónArduino.pdf"></iframe>
         </div>
+    </div>
 
-    </main>
-    <footer>
-        <span>ezgarox._</span>
-        <img src="https://www.capouilliez.edu.gt/panel-alumnos/assets/img/brand/capouilliez.svg" height="50" width="200" class="logo-zoom">
-    </footer>    
+    <!-- SEMANA 2 -->
+    <div class="semana">
+        <h3>Semana 2: Presentación de Avances</h3>
+        <p>Mira el video explicativo de esta semana.</p>
+
+        <div class="video-container">
+            <video controls>
+                <source src="recursos/Grabación 2026-05-13 132945.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+    </div>
+
+    <!-- SEMANA 3 -->
+    <div class="semana">
+        <h3>Semana 3: Evidencia del Proyecto</h3>
+        <p>Imagen correspondiente a las actividades realizadas.</p>
+
+        <div class="imagen-container">
+            <img src="recursos/fotosrduino1.jpeg" alt="Semana 3">
+        </div>
+    </div>
+
+    <!-- SEMANA 4 -->
+    <div class="semana">
+        <h3>Semana 4</h3>
+
+        <p>
+            Creamos un circuito que busca simular un semáforo.
+        </p>
+
+        <div class="imagen-container">
+            <img src="recursos/Semana4.jpeg" alt="Semana 4">
+        </div>
+    </div>
+
+    <!-- SEMANA 5 -->
+    <div class="semana">
+        <h3>Semana 5</h3>
+
+        <p>
+            Creamos un circuito que busca simular un semáforo.
+        </p>
+
+        <div class="imagen-container">
+            <img src="recursos/semana7.jpg" alt="Semana 5">
+        </div>
+    </div>
+
+    <!-- SEMANA 6 -->
+    <div class="semana">
+        <h3>Semana 6</h3>
+
+        <p>
+            Creamos un circuito con un sensor ultrasónico que enciende un LED de diferente color dependiendo de la distancia.
+        </p>
+
+        <div class="video-container">
+            <video controls>
+                <source src="recursos/semana 6 tics (1).mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+    </div>
+
+    <!-- SEMANA 7 -->
+    <div class="semana">
+        <h3>Semana 7</h3>
+
+        <p>
+            Creamos un circuito que detecta el movimiento de las personas para simular el funcionamiento de unas escaleras eléctricas.
+        </p>
+
+        <div class="video-container">
+            <video controls>
+                <source src="recursos/Semana 7.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <span>ezgarox._</span>
+
+    <img src="https://www.capouilliez.edu.gt/panel-alumnos/assets/img/brand/capouilliez.svg"
+         height="50"
+         width="200"
+         class="logo-zoom">
+</footer>
+
 </body>
 </html>
